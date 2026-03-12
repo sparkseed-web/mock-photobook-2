@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #333;
+  font-size: 0.875rem;
+}
+
+.container {
+    max-width:1000px;
+    margin: 0 auto;
+    
+  }
+
+  .inner {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+  }
+  
+  .title {
+    padding-top: 30px;
+    
+  }
+
+/*header*/
+
+header {
+  margin-top:60px;
+}
+
+.header-logo img {
+  width: 150px;
+  margin-left: 10px;
+}
+
+/*main*/
+
+.main-visual {
+  margin-top: 10px;
+}
+
+.main-visual img {
+  max-width: 100%;
+}
+
+.index-container {
+  text-align: center;
+  
+}
+
+.title h2 {
+  font-size: 16.38px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.index-container ,.detail-container {
+  background-color: hsla(30, 3%, 71%, 0.158);
+  padding-bottom:40px;
+  margin: 40px 80px 0 80px;
+}
+
+ol{
+  padding: 30px ;
+  margin: 0 45px;
+  border: 1px solid rgb(22, 21, 21);
+}
+
+ol li {
+  list-style-position: inside;
+  margin-bottom: 20px;
+}
+
+ol li:last-child {
+  margin-bottom: 0;
+}
+
+.photos-container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:20px; */
+}
+
+.photos-container img {
+  max-width:49%;
+  margin-bottom: 15px;
+  /* border: 1px solid blue; */
+}
+
+.detail-inner {
+  display: flex;
+  margin: 0 3%;
+}
+
+.detail-inner p {
+  display: inline-block;
+  font-size: bold;
+}
+
+dl {
+  width: 45%;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  padding-bottom: 10px;
+}
+
+.text {
+  margin-left: 5%;
+  padding-left: 6%;
+  border-left: 1px solid rgb(122, 100, 100);
+}
+
+.text p {
+  margin-bottom: 15px;
+}
+
+.text a {
+  color: rgb(51, 47, 47);
+}
+
+/*footer*/
+
+footer {
+  margin-top: 60px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+/*レスポンシブ*/
+
+@media (max-width: 1024px) {
+  .photos-container {
+      display: block;
+      text-align: center;
+    }
+
+    .photos-container img {
+      max-width: 80%;
+      margin-top: 10px;
+    }
+
+    .photos-container img:nth-child(1) {
+      margin-top: 1px;
+    }
+
+    .detail-inner {
+      display: block;
+    }
+
+    .text {
+      border-left: none;
+      border-top: 1px solid  black;
+      margin: 25px 0 0 0;
+      padding:25px 0 0 0;
+    }
+  
+    ol {
+      margin:0 20px; 
+    }
+    
+  }
