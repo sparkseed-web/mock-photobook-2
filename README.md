@@ -10,3 +10,5 @@
 ## 工夫した点
 -  gridを利用して画像を配置
 - シンプルな構造を丁寧にコーディング
+## 公開URL
+https://sparkseed-web.github.io/mock-photobook-2/
